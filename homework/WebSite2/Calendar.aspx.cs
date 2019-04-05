@@ -22,7 +22,7 @@ public partial class Calendar : System.Web.UI.Page
             e.Cell.BackColor = System.Drawing.Color.Red;
             e.Cell.ForeColor = System.Drawing.Color.White;
         }
-        else if (e.Day.Date.Day == 12 )
+        else if ((e.Day.Date.Day == 12) && e.Day.Date.Month == 8)
         {
             Literal ObjL = new Literal();
             ObjL.Text = "วันแม่";
